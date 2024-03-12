@@ -1,6 +1,6 @@
 #ifndef EMU_STRUCT_H
 #define EMU_STRUCT_H
-#define EMU_VERSION1_200
+#define EMU_VERSION1_218
 
 struct emu_data_t {
 	uint16_t RPM;  //RPM
@@ -10,7 +10,6 @@ struct emu_data_t {
 	float Batt;  //V
 	float IgnAngle;  //deg
 	float pulseWidth;  //ms
-	float scondarypulseWidth;  //ms
 	uint16_t Egt1;  //C
 	uint16_t Egt2;  //C
 	float knockLevel;  //V
@@ -36,7 +35,7 @@ struct emu_data_t {
 	uint8_t fuelLevel;  //%
 	uint8_t tablesSet;  //
 	float lambdaTarget;  //λ
-	float afrTarget;  //AFR
+	float scondarypulseWidth;  //ms
 	uint16_t cel;  //
 };
 #endif
